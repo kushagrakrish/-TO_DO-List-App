@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: white;
+  font-family: "poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header, form {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input, form button {
+  padding: 0.5rem;
+  font-size: 1.59rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #ff6f47;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #ff6f47;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+
+.todo {
+  display: flex;
+  color: black;
+  background: white;
+  margin: 0.5rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  align-self: center;
+  transition: 0.5s ease-in-out;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn, .complete-btn {
+  border: none;
+  padding: 1rem;
+  color: white;
+  background: #ff6f47;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: #49cc49;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #ff6f47;
+  cursor: pointer;
+  width: 12rem;
+  padding: 0.4rem;
+}
+
+select::after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #ff6f47;
+  cursor: pointer;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+select::after:hover {
+  color: white;
+  background-color: #ff6f47;
+}/*# sourceMappingURL=styles.css.map */
